@@ -1,0 +1,13 @@
+模式选择：bmp_2in1.bin
+激光模式：bmp_laser.bin
+打印模式：bmp_printer.bin
+定位：bmp_locate.bin
+弱光开关：bmp_light.bin
+
+2022.2.15
+zoffset按钮：bmp_Zoffset.bin
+zoffset增加：bmp_Add.bin
+zoffset减少：bmp_Dec.bin
+zoffset步进值0.01：bmp_step001_zoffset.bin
+zoffset步进值0.1：bmp_step01_zoffset.bin
+zoffset步进值1：bmp_step1_zoffset.bin
