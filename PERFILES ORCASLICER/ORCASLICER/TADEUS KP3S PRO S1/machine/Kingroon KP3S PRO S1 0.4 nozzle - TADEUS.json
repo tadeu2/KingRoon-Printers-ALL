@@ -1,0 +1,16 @@
+{
+    "from": "User",
+    "gcode_flavor": "klipper",
+    "inherits": "Kingroon KP3S PRO S1 0.4 nozzle",
+    "is_custom_defined": "0",
+    "layer_change_gcode": ";AFTER_LAYER_CHANGE\nM117 Layer {layer_num+1}/[total_layer_count] : {filament_settings_id[0]} ;Update layer progress for LCD displays\nSET_PRINT_STATS_INFO CURRENT_LAYER={layer_num + 1} ;Update layer progress 2nd screen like KlipperScreen\n;[layer_z]",
+    "machine_end_gcode": "{if max_layer_z < max_print_height}G1 Z{z_offset+min(max_layer_z+2, max_print_height)} F600 ; Move print head up{endif}\nG1 X5 Y{print_bed_max[1]*0.8} F{travel_speed*60} ; present print\n{if max_layer_z < max_print_height-10}G1 Z{z_offset+min(max_layer_z+20, max_print_height-10)} F600 ; Move print head further up{endif}\n{if max_layer_z < max_print_height*0.6}G1 Z{max_print_height*0.6} F600 ; Move print head further up{endif}\nM140 S0 ; turn off heatbed\nM104 S0 ; turn off temperature\nM107 ; turn off fan\nG1 X0 Y170 F1000 ; prepare for part removal\nM84; disable motors",
+    "machine_start_gcode": "M190 S0 ; Prevents prusaslicer engine from prepending m190 to the gcode ruining our macro\nM109 S0 ; Prevents prusaslicer engine from prepending \nm109 to the gcode ruining our macro\nSET_PRINT_STATS_INFO TOTAL_LAYER=[total_layer_count] ; Provide layer information\nSTART_PRINT EXTRUDER_TEMP=[nozzle_temperature_initial_layer] BED_TEMP=[first_layer_bed_temperature] CHAMBER=[chamber_temperature] PRINT_MIN={first_layer_print_min[0]},{first_layer_print_min[1]} PRINT_MAX={first_layer_print_max[0]},{first_layer_print_max[1]}",
+    "name": "Kingroon KP3S PRO S1 0.4 nozzle - TADEUS",
+    "print_host": "192.168.1.164",
+    "printer_settings_id": "Kingroon KP3S PRO S1 0.4 nozzle - TADEUS",
+    "version": "1.6.5.0",
+    "z_hop": [
+        "0.3"
+    ]
+}

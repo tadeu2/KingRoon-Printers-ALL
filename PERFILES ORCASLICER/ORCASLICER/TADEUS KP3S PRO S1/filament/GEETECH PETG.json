@@ -1,0 +1,16 @@
+{
+    "filament_settings_id": [
+        "GEETECH PETG"
+    ],
+    "from": "User",
+    "inherits": "Kingroon Generic PETG",
+    "is_custom_defined": "0",
+    "name": "GEETECH PETG",
+    "nozzle_temperature": [
+        "250"
+    ],
+    "nozzle_temperature_initial_layer": [
+        "250"
+    ],
+    "version": "1.6.5.0"
+}

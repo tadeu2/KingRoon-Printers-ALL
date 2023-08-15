@@ -1,0 +1,23 @@
+{
+    "bridge_density": "95%",
+    "bridge_flow": "0.9",
+    "bridge_speed": "30",
+    "from": "User",
+    "inherits": "0.20mm Standard @Kingroon KP3S PRO S1",
+    "is_custom_defined": "0",
+    "name": "0.20mm Standard @Kingroon KP3S PRO S1 TADEUS",
+    "overhang_1_4_speed": "50",
+    "overhang_2_4_speed": "40",
+    "overhang_3_4_speed": "20",
+    "print_settings_id": "0.20mm Standard @Kingroon KP3S PRO S1 TADEUS",
+    "sparse_infill_density": "100%",
+    "sparse_infill_pattern": "zig-zag",
+    "support_base_pattern": "hollow",
+    "support_critical_regions_only": "1",
+    "support_on_build_plate_only": "1",
+    "support_style": "snug",
+    "support_threshold_angle": "20",
+    "support_type": "normal(auto)",
+    "tree_support_wall_count": "2",
+    "version": "1.6.4.0"
+}
